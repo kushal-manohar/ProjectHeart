@@ -200,7 +200,7 @@ def admin_page():
         if st.button("Add Doctor"):
             create_doctor_table()
             add_doctor_data(doctorname, specialization, hospital, mobileno)
-            st.success("You have successfully added doctor.Go to the Login Menu to login")
+            st.success("You have successfully added doctor.")
     elif goto == "View User":
         view_user()
     elif goto == "View Doctor":
