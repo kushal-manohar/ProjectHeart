@@ -33,7 +33,7 @@ def view_user():
 
 def view_doctor():
     cursor.execute("SELECT * FROM doctordb")
-    df = pd.DataFrame(cursor.fetchall(), columns=['doctorname', 'specialization', 'mobileno'])
+    df = pd.DataFrame(cursor.fetchall(), columns=['doctorname', 'specialization', 'hospital', 'mobileno'])
     st.dataframe(df)
 
 
